@@ -7,7 +7,7 @@
 - 高级语言 解释性强
 - 速度快
 - 模块
-- 简单优雅~~（大雾~~
+- 简单优雅
 
 ### Python的安装
 
@@ -213,10 +213,10 @@ print(my_list) # ['a', 'c']
 创建一个字典：
 ```python
 my_dict = {
-	'a': 'apple',
-	'b': 'carrot',
-	3: 'number',
-	'c': 'citrus'
+    'a': 'apple',
+    'b': 'carrot',
+    3: 'number',
+    'c': 'citrus'
 }
 ```
 调用字典里的值也是用方括号：
@@ -245,7 +245,7 @@ print(some_dict['abc']) # 100
 假设我们有一个`x`变量，我们想让用户知道`x`是否等于1，这时候可以使用`if`语句。
 ```python
 if x == 1:
-	print('x等于1！')
+    print('x等于1！')
 ```
 这个语法有几个需要注意的地方：
 - 在控制语句内的代码需要缩进（4个空格或是一个Tab）
@@ -254,9 +254,9 @@ if x == 1:
 同时，在`if`后面加上`else`可以达成if else的逻辑：
 ```python
 if x == 1:
-	print('x等于1！')
+    print('x等于1！')
 else:
-	print('x不等于1！')
+    print('x不等于1！')
 ```
 
 是不是很简单？
@@ -266,13 +266,13 @@ a = 5
 b = 4 * a
 c = 9
 if a + b < 50:
-	if c * 3 > b:
-		print('Case 1')
-	else:
-		print('Case 2')
+    if c * 3 > b:
+        print('Case 1')
+    else:
+        print('Case 2')
 else:
-	if c + a < b:
-		print('Case 3')
+    if c + a < b:
+        print('Case 3')
 ```
 
 ### 循环
@@ -293,13 +293,13 @@ print('9: Hello World')
 可以被写成这样：
 ```python
 for i in range(10):
-	print(str(i) + ': Hello World')
+    print(str(i) + ': Hello World')
 ```
 
 __`for`语句__
 ```python
 for i in [0, 1, 2, 3, 4]:
-	print(i)
+    print(i)
 ```
 运行结果：
 ```
@@ -314,7 +314,7 @@ for i in [0, 1, 2, 3, 4]:
 ```python
 my_list = [32, 100, 64, 9, 72]
 for i in my_list:
-	print(i)
+    print(i)
 ```
 运行结果：
 ```
@@ -330,7 +330,7 @@ for i in my_list:
 Python有个自带的`range`关键字。假设我们想遍历[10, 20)这个区间，就可以直接把这两个值放到`range`里，然后使用`for`语句：
 ```python
 for i in range(10, 20):
-	print(i)
+    print(i)
 ```
 运行结果（省略了中间部分）：
 ```
@@ -357,8 +357,8 @@ __参考答案：__（向下翻）
 |
 ```python
 for i in range(0, 100):
-	if i % 6 == 0: # 假设一个数除以N后余数是0，则那个数是N的倍数
-		print(i)
+    if i % 6 == 0: # 假设一个数除以N后余数是0，则那个数是N的倍数
+        print(i)
 ```
 
 __`while`语句__
@@ -367,8 +367,8 @@ __`while`语句__
 ```python
 i = 0
 while i < 5:
-	print(i)
-	i = i + 1
+    print(i)
+    i = i + 1
 ```
 这段代码在当`i`小于五的时候会一直循环，并每次循环给`i`加1。
 再举个例子，以下代码会判断`x`是否是2^n，以及假如是的话n的值是多少：
@@ -376,13 +376,13 @@ while i < 5:
 x = 128
 n = 0
 while x > 1:
-	x = x / 2
-	n = n + 1
+    x = x / 2
+    n = n + 1
 
 if x < 1:
-	print('x不是2^n！')
+    print('x不是2^n！')
 else:
-	print('x是2^' + str(n))
+    print('x是2^' + str(n))
 ```
 ## 函数
 恭喜你，你已经成功掌握了基本的数据类型，判断，和循环！
@@ -503,9 +503,9 @@ numpy (1.18.5)                            - NumPy is the fundamental package for
   
 - 而`from ... import *`则帮你从模块中导入所有内容。
 
-  
 
 
-参考资料：
-· [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
-· [Python3菜鸟教程](https://www.runoob.com/python3/python3-tutorial.html)
+## 参考资料：
+
+- [廖雪峰的Python教程](https://www.liaoxuefeng.com/wiki/1016959663602400)
+- [Python3菜鸟教程](https://www.runoob.com/python3/python3-tutorial.html)
