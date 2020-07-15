@@ -1,85 +1,122 @@
-# Intro to ML Python Preview Material (1st draft)
+# 机器学习入门预习——Python 基础
 
-## Python的简介与安装
+## Python 的简介与安装
 
-### Python语言特性
+### Python 语言特性
 
-- 高级语言 解释性强
+- 高级语言，解释性强
 - 速度快
 - 模块
 - 简单优雅
 
-### Python的安装
 
-- Mac
-  - homebrew: 在终端输入`brew install python3` （推荐）
-  - 前往[Python官网](https://www.python.org/downloads/)下载任意Python3 "macOS 64 bit installer"， 并按照安装程序指示安装。
-- Windows
-  - 根据Windows版本前往[Python官网](https://www.python.org/downloads/)下载任意Python3的32/64bit安装程序，
-    并按照安装程序指示安装，务必记得勾选`Add Python 3.x to PATH`
-- Linux
-  - 相信你已经熟悉了Linux并懂得如何安装，不然还是请使用Mac或Windows吧
+### 安装 Python
 
-### 运行Python
+#### macOS
+  - Homebrew（推荐）: 打开终端 （Terminal）并输入
 
-Mac请打开命令行，输入`python3`或`python`（取决于你有没有安装`python2`）并按下回车，如果安装成功你就会进入到交互式环境中，即下图
+```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew install python```
+  - 前往 [Python 官网](https://www.python.org/downloads/) 下载任意 Python 3 “macOS 64 bit installer”，并按照安装程序指示安装。
 
-![Mac 交互](https://i.loli.net/2020/07/07/jXs3q9NlP4ARDwn.gif)
+#### Windows
 
-Windows请打开cmd，输入`python`并按下回车，如果安装成功你就会进入到交互式环境中（图略，与上图类似）
-至此你已经成功安装了Python，开始你的编程之旅吧！
+前往 [Python官网](https://www.python.org/downloads/) 并根据 Windows 版本下载对应 Python 3 的 32 / 64bit 安装程序，并按照安装程序指示安装。务必记得勾选“Add Python 3.x to PATH”选项。
 
-### 第一个Python程序
+#### Linux
 
-打开你的交互式环境，在交互模式的提示符`>>>`下，直接输入代码，按回车，就可以立刻得到代码执行结果。现在，试试输入`1+1`，看看计算结果是不是`2`：
+相信你已经熟悉了 Linux 并懂得如何安装，不然还是请使用 Mac 或 Windows 吧。
+
+
+### 运行 Python
+
+#### Mac
+
+打开终端，并输入 `python3` 或 `python`（取决于你有没有安装 `python2`）并按下回车，如果安装成功你就会进入到 Python 交互式环境中，如下图所示：
+
+![Mac Python 交互](https://i.loli.net/2020/07/07/jXs3q9NlP4ARDwn.gif)
+
+#### Windows
+
+请打开 CMD，输入 `python` 并按下回车，如果安装成功你就会进入到交互式环境中（图略，与上图类似）
+
+> 至此你已经成功安装了Python，开始你的编程之旅吧！
+
+
+### 第一个 Python 程序
+
+进入你的 Python 交互式环境，在交互模式的提示符 `>>>` 下，直接输入代码，按回车，就可以立刻得到代码执行结果。
+
+现在，试试输入 `1 + 1`，看看计算结果是不是`2`：
 
 ```python
 >>> 1 + 1
 2
 ```
-是不是很简单！你也可以让Python打印你想说的话，只需要用`print()`函数就可以了。当然你要把文字用单/双引号括起来：
+
+是不是很简单！你也可以让 Python 任何一句话，只需要使用 `print()` 函数就可以了（不过你需要把文字用单/双引号括起来）：
+
 ```python
 >>> print("hello world")
 hello world
 ```
-还有些一头雾水？不用担心，这些我们都会在后面更详细地讲解。现在我们需要退出交互环境，你只需要输入`exit()`就可以了。
-这样我们就完成了第一个Python程序，只不过它没有被存下来。当然，交互式环境也并不是为了编写代码用的，而更多是为了调试和方便初学者使用的。所以，后续学习和操作建议大家安装使用IDE (Integrated Development Environment)，方便保存文件、运行和debug。常用的ide有pycharm, vscode等很多软件。
-这么多选择，~~那挖掘机技术哪家强？~~那我们到底用哪个呢？
-如果没有特殊偏好我推荐大家使用vscode，简单易用且跨平台。
 
-当然，还有更硬核的方法：你可以在任意的文本编辑器里写好你的.py文件，并用终端进行编译。
-比如我在~/TX/TX20/intro2ml/的文件路径下有一个名为helloWorld.py的Python程序需要运行，
-那我只需打开终端/CMD，利用`cd`命令跳转至该文件路径下，然后输入`python3 helloWorld.py`。
-(Btw 在终端中利用`pwd`查看当前文件路径)
+还有些一头雾水？不用担心，这些我们都会在后面更详细地讲解。现在我们需要退出交互环境，你只需要输入 `exit()` 并按下回车就可以了。
 
-![render1594134157123.gif](https://i.loli.net/2020/07/07/TLFXwG4I5mHrQxl.gif)
+至此我们就完成了第一个 Python 程序，只不过它没有被存下来。当然，交互式环境也并不是为了编写代码用的，而更多是为了调试和方便初学者实验使用的。所以，后续学习和操作建议大家安装使用一个 IDE (Integrated Development Environment)，方便保存代码文件、运行和调试。常用的 IDE 有 PyCharm, VSCode 等。这么多选择，~~那挖掘机技术哪家强？~~那我们到底用哪个呢？如果没有特殊偏好我们推荐大家使用 VSCode，简单易用且跨平台。
+
+当然，还有一种更硬核的方法：你可以在任意的文本编辑器里写好你的 `.py` 后缀的 Python 文件，并用终端运行。
+
+比如我在 `~/TX/TX20/intro2ml/` 的文件路径下有一个名为 `helloWorld.py` 的 Python 程序想要运行，那我只需打开终端（对于 Windows 用户就是 CMD），利用 `cd` 命令跳转至该文件路径下，然后输入 `python3 helloWorld.py` 即可，如下图所示。
+
+> 注：在终端中利用 `pwd` 可以查看当前文件路径
+
+![Mac 终端运行 Python 文件](https://i.loli.net/2020/07/07/TLFXwG4I5mHrQxl.gif)
+
 
 
 ## 输入与输出
-- 输出
-就像在交互环境那里讲过的一样，如果我们想用Python在屏幕上打印字符，只需要用`print()`在括号中加上字符串。
-`print()`也可以接受多个字符串，用逗号`,`隔开：
+
+### 输出
+
+就像之前说过的一样，如果我们想用 Python 在屏幕上打印字符串，只需要使用 `print()` 并在括号内加上字符串。
+
+此外，`print` 函数也可以接受多个字符串，用逗号 `,` 隔开：
+
 ```python
 >>> print("TechX", "2020:", "We choose to go to the moon")
 TechX 2020: We choose to go to the moon
 ```
-在上面的程序中，`print()`会依次打印每个字符串，遇到`,`则输出一个空格。
-你应该注意到`print()`也能打印数字，因此也可以打印计算结果。
 
-- 输入
-如果我们想让Python读取我们在键盘上的操作，我们只需要使用`input()`函数，比如：
+在上面的程序中，`print()` 会依次打印每个字符串，并在每两个字符串之间加上一个空格。
+
+同时，`print()` 也能打印数字，因此也可以打印计算结果：
+
+```python
+>>> print(4 * 9 / 3)
+12
+```
+
+
+### 输入
+
+如果我们想让 Python 读取我们的自定义输入，我们只需要使用 `input()` 函数。比如：
+
 ```python
 >>> name = input()
 David # 这里指的是你在键盘上的输入
 >>> name
 'David' # 这里是name变量的内容
 ```
-注意，Python3的`input()`函数接受一个标准输入数据，返回为`str`，
-也就是说，即使你想输入数字，经过`input()`后这个数字也会变成字符串。
-那么如何输入数字呢？我们需要进行强制类型转换，即`num = int(input())`。
-这样一来，你输入的`1`会先经过`input()`变成`'1'`，再经过强制转换变为`1`。
-要注意的是，如果这是你输入的是类似于`abc`的字符串，Python会报错，因为无法把这些字符转化为整数。
+
+注意，Python 3 的 `input()` 函数接受一个标准输入数据，返回为 `str`，也就是说，即使你输入了一个数字，`input()` 的返回值仍然会是一个字符串。
+
+那么如何输入数字呢？我们需要进行强制类型转换，例如 `num = int(input())`。这样一来，你输入的 `1` 会先经过 `input()` 变成 `'1'`，再经过转换变为 `1`。
+
+要注意的是，如果这是你输入的是类似于 `abc` 的字符串，Python 会报错，因为无法把这些字符转化为数字。
+
 关于类型转换我们在下面的数字类型部分也会提到。
+
+
 
 ## 基本数据类型
 
