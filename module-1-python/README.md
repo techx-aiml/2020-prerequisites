@@ -13,10 +13,11 @@
 ### 安装 Python
 
 #### macOS
-  - Homebrew（推荐）: 打开终端 （Terminal）并输入
+  - （推荐）前往 [Python 官网](https://www.python.org/downloads/) 下载任意 Python 3 “macOS 64 bit installer”，并按照安装程序指示安装。
+  - Homebrew: 打开终端 （Terminal）并输入
 
 ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew install python```
-  - 前往 [Python 官网](https://www.python.org/downloads/) 下载任意 Python 3 “macOS 64 bit installer”，并按照安装程序指示安装。
+  
 
 #### Windows
 
@@ -122,16 +123,22 @@ David # 这里指的是你在键盘上的输入
 
 ### 数字
 Python支持三种不同的数值类型，分别是：
+
 - 整数
   Python可以处理任意大小的正/负整数，和平常的写法一样，比如`2020`, `-1`, `0`等等。
+  
 - 浮点数
   浮点数就是小数，可以按照数学写法，比如`3.14`, `-6.6`。但对于很大或很小的浮点数，我们应该使用科学计数法，比如`6.67e-11`, `2.01e30`。
+
 - 复数
   由实部和虚部组成，可以用`a + bj`或`complex(a,b)`来表示，其中`a`和`b`都是浮点数。
 
 那我们如何进行数字类型的转换和运算呢？Python内置了以下几种函数来进行数字转换：
+
 - `int(x)`将x转换为一个整数。
+
 - `float(x)`将x转换到一个浮点数。
+
 - `complex(x,y)`将 x 和 y 转换到一个复数，实数部分为 x，虚数部分为 y。
 
 而Python的数字运算基本和计算器一致：
@@ -173,7 +180,9 @@ Python支持三种不同的数值类型，分别是：
 
 ### 字符串
 字符串是任意以`'`或`"`括起来的文本，比如`'zbc'`, `"aoligei"`等等。
-请注意`'`和`"`并非字符串的一部分，它们只是一种表示方法。
+
+请注意`'`和`"`并非字符串的一部分，它们只是表示方法。
+
 如果字符串内部必须使用`'`或`"`该怎么办呢？Python需要使用转义字符`\\`来标识，以防电脑误判：
 ```python
 >>> print('I\'m \"OK\"!')
