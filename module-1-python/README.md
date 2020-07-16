@@ -2,26 +2,25 @@
 
 ## Python 的简介与安装
 
-### Python 语言特性
+### Python 的特点
 
-- 高级语言，解释性强
-- 速度快
-- 模块
+- 可读性强
+- 模块多
 - 简单优雅
 
 
 ### 安装 Python
 
 #### macOS
-  - （推荐）前往 [Python 官网](https://www.python.org/downloads/) 下载任意 Python 3 “macOS 64 bit installer”，并按照安装程序指示安装。
-  - Homebrew: 打开终端 （Terminal）并输入
+  - （推荐）前往 [Python 官网](https://www.python.org/downloads/) 下载 Python 3.7 “macOS 64 bit installer”，并按照安装程序指示安装。
+  - （假如第一种方法出现问题）Homebrew: 打开终端 （Terminal）并输入
 
 ```ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew install python```
   
 
 #### Windows
 
-前往 [Python官网](https://www.python.org/downloads/) 并根据 Windows 版本下载对应 Python 3 的 32 / 64bit 安装程序，并按照安装程序指示安装。务必记得勾选“Add Python 3.x to PATH”选项。
+前往 [Python官网](https://www.python.org/downloads/) 并根据 Windows 版本下载对应 Python 3.7 的 32 / 64bit 安装程序，并按照安装程序指示安装。务必记得勾选“Add Python 3.x to PATH”选项。
 
 #### Linux
 
@@ -32,7 +31,7 @@
 
 #### Mac
 
-打开终端，并输入 `python3` 或 `python`（取决于你有没有安装 `python2`）并按下回车，如果安装成功你就会进入到 Python 交互式环境中，如下图所示：
+打开终端，并输入 `python3` 并按下回车，如果安装成功你就会进入到 Python 交互式环境中，如下图所示：
 
 ![Mac Python 交互](https://i.loli.net/2020/07/07/jXs3q9NlP4ARDwn.gif)
 
