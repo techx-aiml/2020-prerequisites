@@ -459,10 +459,11 @@ else:
 下面你就可以开始更深一层次的学习了！
 
 在这一阶段我们要掌握抽象的能力，举个栗子，我们要对1至100的数求和。
-以`1 + 2 + 3 + ... + 100`这种形式来书写无疑是很麻烦的，于是数学家就发明了求和符合<img src="sigma.png?raw=true" alt="Sigma" width="75">。
+以`1 + 2 + 3 + ... + 100`这种形式来书写无疑是很麻烦的，于是数学家就发明了求和符合<img src="sigma.png?raw=true" alt="Sigma" width="25">。
 
 这样一来我们就可以把求和记成：
-![](equation.png?raw=true | width=300)
+
+<img src="equation.png?raw=true" alt="Sigma Equation" width="100">
 
 这种抽象逻辑无疑是很有帮助的，因为这样一来我们就不用关心底层的运算，而是考虑更高层的逻辑。
 这也正是计算机编程所需要的。
